@@ -6,6 +6,8 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.mclares.workshopmongo.dto.AuthorDTO;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -26,5 +28,5 @@ public class Post implements Serializable {
 	private Date date;
 	private String title;
 	private String body;
-	private User author;
+	private AuthorDTO author;
 }
